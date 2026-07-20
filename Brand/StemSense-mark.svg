@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">StemSense mark</title>
+  <desc id="desc">Two opposing stems curve around a central media scrub cursor.</desc>
+  <rect width="1024" height="1024" fill="#090B0A"/>
+  <g fill="none" stroke="#DFFF5F" stroke-width="68" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M456 210v150c0 47 38 85 85 85h104c55 0 93 17 121 54"/>
+    <path d="M568 814V664c0-47-38-85-85-85H379c-55 0-93-17-121-54"/>
+  </g>
+  <g fill="none" stroke-linecap="round">
+    <path d="M302 512h420" stroke="#F5F7EE" stroke-width="22"/>
+    <path d="M214 512h52M758 512h52" stroke="#DFFF5F" stroke-width="26"/>
+  </g>
+  <circle cx="512" cy="512" r="28" fill="#F5F7EE"/>
+</svg>

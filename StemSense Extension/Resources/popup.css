@@ -1,0 +1,22 @@
+:root { color-scheme: dark; }
+body {
+  margin: 0;
+  min-width: 290px;
+  background: #0a0c0e;
+  color: #f5f6f2;
+  font: 14px/1.35 -apple-system, BlinkMacSystemFont, sans-serif;
+}
+main { display: flex; gap: 12px; align-items: center; padding: 16px; }
+.mark {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 13px;
+  background: #dfff5f;
+  color: #080a0b;
+  font-size: 21px;
+  font-weight: 850;
+}
+strong { font-size: 15px; }
+p { margin: 3px 0 0; color: #a6aba4; white-space: nowrap; }

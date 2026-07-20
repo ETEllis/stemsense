@@ -1,0 +1,107 @@
+name: StemSense
+options:
+  minimumXcodeGenVersion: 2.43.0
+  deploymentTarget:
+    iOS: "18.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.1.0"
+    CURRENT_PROJECT_VERSION: "2"
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+    ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+targets:
+  StemSense:
+    type: application
+    platform: iOS
+    sources:
+      - path: StemSense
+        excludes:
+          - AppDelegate.swift
+          - SceneDelegate.swift
+          - ViewController.swift
+          - Base.lproj
+          - Resources/Style.css
+          - Resources/Icon.png
+          - Resources/Base.lproj
+    resources:
+      - path: StemSense/Resources/PlayerShell.html
+    info:
+      path: StemSense/Info.plist
+      properties:
+        CFBundleDisplayName: StemSense
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        LSApplicationCategoryType: public.app-category.utilities
+        NSMotionUsageDescription: StemSense uses AirPods motion locally to learn the difference between left-stem and right-stem gestures.
+        NSMicrophoneUsageDescription: Optional Contact Assist converts AirPods microphone input into short-lived energy features to improve left-right gesture inference. Audio is never stored.
+        UIApplicationSupportsIndirectInputEvents: true
+        UILaunchScreen:
+          UIColorName: LaunchBackground
+        UIBackgroundModes:
+          - audio
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        CFBundleURLTypes:
+          - CFBundleURLName: com.etellis.stemsense.link
+            CFBundleURLSchemes:
+              - stemsense
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.etellis.stemsense
+        PRODUCT_NAME: StemSense
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: false
+    dependencies:
+      - target: StemSense Extension
+        embed: true
+
+  StemSense Extension:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: StemSense Extension
+    info:
+      path: StemSense Extension/Info.plist
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.etellis.stemsense.Extension
+        PRODUCT_NAME: StemSense Extension
+        APPLICATION_EXTENSION_API_ONLY: true
+        SKIP_INSTALL: true
+        GENERATE_INFOPLIST_FILE: false
+
+  StemSenseTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: StemSenseTests
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.etellis.stemsense.tests
+        GENERATE_INFOPLIST_FILE: true
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/StemSense.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StemSense"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+    dependencies:
+      - target: StemSense
+
+schemes:
+  StemSense:
+    build:
+      targets:
+        StemSense: all
+        StemSense Extension: all
+        StemSenseTests: [test]
+    test:
+      gatherCoverageData: true
+      targets:
+        - StemSenseTests

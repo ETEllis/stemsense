@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <style>
+    * { box-sizing: border-box; }
+    html, body, #player { width: 100%; height: 100%; margin: 0; background: #050607; overflow: hidden; }
+    body { color: white; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+    #empty { position: fixed; inset: 0; display: grid; place-items: center; color: #777d79; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div id="empty">Paste a YouTube link below</div>
+  <div id="player"></div>
+  <script>
+    (() => {
+      "use strict";
+      let player = null;
+      let requestedVideoID = null;
+      let progressTimer = null;
+
+      function post(event, payload = {}) {
+        window.webkit?.messageHandlers?.stemsense?.postMessage({ event, ...payload });
+      }
+
+      function beginProgress() {
+        clearInterval(progressTimer);
+        progressTimer = setInterval(() => {
+          if (!player || typeof player.getCurrentTime !== "function") return;
+          const currentTime = Number(player.getCurrentTime()) || 0;
+          const duration = Number(player.getDuration()) || 0;
+          post("progress", { currentTime, duration });
+        }, 500);
+      }
+
+      function publishMetadata() {
+        if (!player || typeof player.getVideoData !== "function") return;
+        const data = player.getVideoData() || {};
+        post("metadata", { title: data.title || "YouTube" });
+      }
+
+      window.onYouTubeIframeAPIReady = () => {
+        player = new YT.Player("player", {
+          width: "100%",
+          height: "100%",
+          videoId: requestedVideoID || "",
+          playerVars: {
+            playsinline: 1,
+            controls: 1,
+            rel: 0,
+            fs: 1,
+            origin: "https://stemsense.app"
+          },
+          events: {
+            onReady: () => {
+              post("ready");
+              beginProgress();
+              publishMetadata();
+              if (requestedVideoID) player.cueVideoById(requestedVideoID);
+            },
+            onStateChange: (event) => {
+              post("state", { state: event.data });
+              if (event.data === YT.PlayerState.PLAYING || event.data === YT.PlayerState.CUED) {
+                document.getElementById("empty")?.remove();
+                publishMetadata();
+              }
+            },
+            onError: (event) => post("error", { code: event.data })
+          }
+        });
+      };
+
+      window.StemSense = {
+        load(videoID) {
+          requestedVideoID = videoID;
+          document.getElementById("empty")?.remove();
+          if (player && typeof player.loadVideoById === "function") {
+            player.loadVideoById(videoID);
+          }
+        },
+        seekTo(seconds) {
+          if (player && typeof player.seekTo === "function") player.seekTo(seconds, true);
+        },
+        play() {
+          if (player && typeof player.playVideo === "function") player.playVideo();
+        },
+        pause() {
+          if (player && typeof player.pauseVideo === "function") player.pauseVideo();
+        }
+      };
+
+      const api = document.createElement("script");
+      api.src = "https://www.youtube.com/iframe_api";
+      document.head.appendChild(api);
+      post("shellReady");
+    })();
+  </script>
+</body>
+</html>

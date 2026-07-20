@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 420" role="img" aria-labelledby="title desc">
+  <title id="title">StemSense</title>
+  <desc id="desc">StemSense wordmark for light backgrounds.</desc>
+  <g transform="translate(94 64) scale(.28515625)">
+    <g fill="none" stroke="#090B0A" stroke-width="68" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M456 210v150c0 47 38 85 85 85h104c55 0 93 17 121 54"/>
+      <path d="M568 814V664c0-47-38-85-85-85H379c-55 0-93-17-121-54"/>
+    </g>
+    <g fill="none" stroke-linecap="round">
+      <path d="M302 512h420" stroke="#090B0A" stroke-width="22"/>
+      <path d="M214 512h52M758 512h52" stroke="#D1EC3B" stroke-width="26"/>
+    </g>
+    <circle cx="512" cy="512" r="28" fill="#D1EC3B"/>
+  </g>
+  <text x="440" y="260" fill="#090B0A" font-family="Inter, SF Pro Display, Helvetica Neue, Arial, sans-serif" font-size="142" font-weight="660" letter-spacing="-5">StemSense</text>
+</svg>

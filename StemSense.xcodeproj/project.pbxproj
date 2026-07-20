@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00F379D328D8CCBE12A86A79 /* YouTubeURLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1568BF6597D6DCD0693E978 /* YouTubeURLParser.swift */; };
+		0B3949D2E9F435934B95BF63 /* StemSenseEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75BBEE989292C1BF4525E93 /* StemSenseEngine.swift */; };
+		0BA1776A3C79CD4FA61EDB88 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 0A0A07AE5ACA8F636EA308E0 /* popup.html */; };
+		12CA82C92F522D8CE47FD951 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864297235BF54ED67F972929 /* PlayerController.swift */; };
+		160A804C97184E93F9EFCADC /* icon-48.png in Resources */ = {isa = PBXBuildFile; fileRef = F739BE950FD27E9DA00541C5 /* icon-48.png */; };
+		1A53F89EB1B364C937615640 /* content.css in Resources */ = {isa = PBXBuildFile; fileRef = 8D5F59B4A65E92B20FB2BD13 /* content.css */; };
+		24190801B5AAA5874911DA22 /* RemoteCommandController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F951F482DA4F7B8777E8C3 /* RemoteCommandController.swift */; };
+		2E462ACDE72621195A4988F4 /* SafariSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C80958D884E5469081D0DE /* SafariSetupView.swift */; };
+		3618AD50C4C96BCFFC756969 /* YouTubeWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC156629740190FD42C0C57 /* YouTubeWebView.swift */; };
+		3E678213E83F238B6754B374 /* YouTubeURLParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0004CD839E664B4E335EEDB /* YouTubeURLParserTests.swift */; };
+		43F6B4892AF870C52C5C0279 /* PlayerShell.html in Resources */ = {isa = PBXBuildFile; fileRef = C50E610BBA3F7A9925F9DE05 /* PlayerShell.html */; };
+		4FB8E17431543E470B03536C /* SystemVolumeBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E031929D33F1EF7AE13E98F4 /* SystemVolumeBridge.swift */; };
+		720780E12810064A245583A8 /* StemClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEB1864C95725C0BA69267C /* StemClassifier.swift */; };
+		88F0FA54121507D4B10F083A /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 31F3F54F766D54FB2593EB24 /* content.js */; };
+		9442B05C73D3C085C55022AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E28BA725832959070A63417 /* ContentView.swift */; };
+		9FA2ECEA80ADA89D55BEEF3A /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 4722DD51A62E129EFC59765F /* manifest.json */; };
+		A355D3B3AC88E65567048F1F /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E54E672714F3B9A88CF939 /* SafariWebExtensionHandler.swift */; };
+		A373600D2EE15607A44310AF /* icon-128.png in Resources */ = {isa = PBXBuildFile; fileRef = F0980C825554DB408DE873F5 /* icon-128.png */; };
+		A62DB18A67E0E747D8D2EBE9 /* icon-96.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA40895FE9CF01C00126617 /* icon-96.png */; };
+		B5555ED22CC61CEACA62C686 /* StemSenseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D9E5B107764D62186117DF /* StemSenseApp.swift */; };
+		B7E90962A34B40BB42782C78 /* StemSignalCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D165BFC49794A51A58283B18 /* StemSignalCapture.swift */; };
+		BAC1F7B053C24D0CEA9C1BC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E866CDB2BD97908CF289F0E5 /* Assets.xcassets */; };
+		D2B2A6CED4044DCE116F9D05 /* StemClassifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0668D22D9341034AAC38EF1F /* StemClassifierTests.swift */; };
+		E07C56503BFAA5B2352155EB /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 2916446911E17010186D16B7 /* popup.css */; };
+		F15AEAF4A44CA0D2DC3D6EAA /* PlayerSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA0F22541E6D72FEA2272C3 /* PlayerSnapshot.swift */; };
+		F588456CBF125661E74FA6EC /* StemSense Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 140449F258C01D7AC46FECE5 /* StemSense Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FC62C020AB7F3BBEFD16BFD7 /* StemSenseLabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CB1159C0ACCB3B02A5246B /* StemSenseLabView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7074ED23D7204AB80B291F16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC949CF82254CA5D7A053926 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF269253908112075B0B1C62;
+			remoteInfo = "StemSense Extension";
+		};
+		D91EA3304CA109792E4C8923 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC949CF82254CA5D7A053926 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC127708441AFD97EA71D821;
+			remoteInfo = StemSense;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		48F36666455298937373CB89 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F588456CBF125661E74FA6EC /* StemSense Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0668D22D9341034AAC38EF1F /* StemClassifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StemClassifierTests.swift; sourceTree = "<group>"; };
+		0A0A07AE5ACA8F636EA308E0 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		140449F258C01D7AC46FECE5 /* StemSense Extension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = "StemSense Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CA0F22541E6D72FEA2272C3 /* PlayerSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSnapshot.swift; sourceTree = "<group>"; };
+		2916446911E17010186D16B7 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		2EC156629740190FD42C0C57 /* YouTubeWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeWebView.swift; sourceTree = "<group>"; };
+		31E54E672714F3B9A88CF939 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		31F3F54F766D54FB2593EB24 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		37C25FD9D339DEE2C2138E91 /* StemSense.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = StemSense.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4722DD51A62E129EFC59765F /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		76CB1159C0ACCB3B02A5246B /* StemSenseLabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StemSenseLabView.swift; sourceTree = "<group>"; };
+		78811E910DE3DC562853FBC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		864297235BF54ED67F972929 /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
+		8D5F59B4A65E92B20FB2BD13 /* content.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = content.css; sourceTree = "<group>"; };
+		93DB9DE8D1A00AAD515C0420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		97D9E5B107764D62186117DF /* StemSenseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StemSenseApp.swift; sourceTree = "<group>"; };
+		9E28BA725832959070A63417 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B1568BF6597D6DCD0693E978 /* YouTubeURLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeURLParser.swift; sourceTree = "<group>"; };
+		BCEB1864C95725C0BA69267C /* StemClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StemClassifier.swift; sourceTree = "<group>"; };
+		C50E610BBA3F7A9925F9DE05 /* PlayerShell.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = PlayerShell.html; sourceTree = "<group>"; };
+		D0004CD839E664B4E335EEDB /* YouTubeURLParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeURLParserTests.swift; sourceTree = "<group>"; };
+		D165BFC49794A51A58283B18 /* StemSignalCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StemSignalCapture.swift; sourceTree = "<group>"; };
+		D75BBEE989292C1BF4525E93 /* StemSenseEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StemSenseEngine.swift; sourceTree = "<group>"; };
+		E031929D33F1EF7AE13E98F4 /* SystemVolumeBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemVolumeBridge.swift; sourceTree = "<group>"; };
+		E866CDB2BD97908CF289F0E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0980C825554DB408DE873F5 /* icon-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-128.png"; sourceTree = "<group>"; };
+		F739BE950FD27E9DA00541C5 /* icon-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-48.png"; sourceTree = "<group>"; };
+		F7F951F482DA4F7B8777E8C3 /* RemoteCommandController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCommandController.swift; sourceTree = "<group>"; };
+		F8C80958D884E5469081D0DE /* SafariSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariSetupView.swift; sourceTree = "<group>"; };
+		F983734EC3C7DE33EEBD862D /* StemSenseTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = StemSenseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA40895FE9CF01C00126617 /* icon-96.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-96.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		025C559B555B03EB4209720E /* StemSenseTests */ = {
+			isa = PBXGroup;
+			children = (
+				0668D22D9341034AAC38EF1F /* StemClassifierTests.swift */,
+				D0004CD839E664B4E335EEDB /* YouTubeURLParserTests.swift */,
+			);
+			path = StemSenseTests;
+			sourceTree = "<group>";
+		};
+		04B14504DD91C4394992F921 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				140449F258C01D7AC46FECE5 /* StemSense Extension.appex */,
+				37C25FD9D339DEE2C2138E91 /* StemSense.app */,
+				F983734EC3C7DE33EEBD862D /* StemSenseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38C3A1E7740890917FF21C7D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C50E610BBA3F7A9925F9DE05 /* PlayerShell.html */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3D9AB660294A59CCC79B85C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D5F59B4A65E92B20FB2BD13 /* content.css */,
+				31F3F54F766D54FB2593EB24 /* content.js */,
+				4722DD51A62E129EFC59765F /* manifest.json */,
+				2916446911E17010186D16B7 /* popup.css */,
+				0A0A07AE5ACA8F636EA308E0 /* popup.html */,
+				BD3B528AD28B9846C0AEE267 /* icons */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		510BCE233FAE53D7CA89BBB9 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				864297235BF54ED67F972929 /* PlayerController.swift */,
+				F7F951F482DA4F7B8777E8C3 /* RemoteCommandController.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		7D22CEFC5291BE3BB9836BD8 /* StemSense */ = {
+			isa = PBXGroup;
+			children = (
+				BCEB1864C95725C0BA69267C /* StemClassifier.swift */,
+				D75BBEE989292C1BF4525E93 /* StemSenseEngine.swift */,
+				D165BFC49794A51A58283B18 /* StemSignalCapture.swift */,
+				E031929D33F1EF7AE13E98F4 /* SystemVolumeBridge.swift */,
+			);
+			path = StemSense;
+			sourceTree = "<group>";
+		};
+		80EE0A8B501EF6DCF7A3BE48 /* StemSense */ = {
+			isa = PBXGroup;
+			children = (
+				E866CDB2BD97908CF289F0E5 /* Assets.xcassets */,
+				93DB9DE8D1A00AAD515C0420 /* Info.plist */,
+				97D9E5B107764D62186117DF /* StemSenseApp.swift */,
+				E0740564F81CEB7A87D705E3 /* Models */,
+				510BCE233FAE53D7CA89BBB9 /* Player */,
+				38C3A1E7740890917FF21C7D /* Resources */,
+				7D22CEFC5291BE3BB9836BD8 /* StemSense */,
+				E710D28D07A471724F282410 /* Views */,
+			);
+			path = StemSense;
+			sourceTree = "<group>";
+		};
+		874879A3C662B8ED91B4F162 = {
+			isa = PBXGroup;
+			children = (
+				80EE0A8B501EF6DCF7A3BE48 /* StemSense */,
+				9C02306217439BC3BBEB1699 /* StemSense Extension */,
+				025C559B555B03EB4209720E /* StemSenseTests */,
+				04B14504DD91C4394992F921 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C02306217439BC3BBEB1699 /* StemSense Extension */ = {
+			isa = PBXGroup;
+			children = (
+				78811E910DE3DC562853FBC8 /* Info.plist */,
+				31E54E672714F3B9A88CF939 /* SafariWebExtensionHandler.swift */,
+				3D9AB660294A59CCC79B85C2 /* Resources */,
+			);
+			path = "StemSense Extension";
+			sourceTree = "<group>";
+		};
+		BD3B528AD28B9846C0AEE267 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				F739BE950FD27E9DA00541C5 /* icon-48.png */,
+				FAA40895FE9CF01C00126617 /* icon-96.png */,
+				F0980C825554DB408DE873F5 /* icon-128.png */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+		E0740564F81CEB7A87D705E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1CA0F22541E6D72FEA2272C3 /* PlayerSnapshot.swift */,
+				B1568BF6597D6DCD0693E978 /* YouTubeURLParser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E710D28D07A471724F282410 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E28BA725832959070A63417 /* ContentView.swift */,
+				F8C80958D884E5469081D0DE /* SafariSetupView.swift */,
+				76CB1159C0ACCB3B02A5246B /* StemSenseLabView.swift */,
+				2EC156629740190FD42C0C57 /* YouTubeWebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		939F489917D2FBD60693149B /* StemSenseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4236167878F13C60D4DBF464 /* Build configuration list for PBXNativeTarget "StemSenseTests" */;
+			buildPhases = (
+				AC3A87EC69E2EF22E8BF84E3 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2A6A4D161EF1F20E37E7912 /* PBXTargetDependency */,
+			);
+			name = StemSenseTests;
+			packageProductDependencies = (
+			);
+			productName = StemSenseTests;
+			productReference = F983734EC3C7DE33EEBD862D /* StemSenseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AC127708441AFD97EA71D821 /* StemSense */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 793A027F49B62AF5DCBA33B4 /* Build configuration list for PBXNativeTarget "StemSense" */;
+			buildPhases = (
+				AA14DF7BA024C22292C287E0 /* Sources */,
+				50739580C701D6672153FF21 /* Resources */,
+				48F36666455298937373CB89 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F698A63D89A7F8D14FDEC489 /* PBXTargetDependency */,
+			);
+			name = StemSense;
+			packageProductDependencies = (
+			);
+			productName = StemSense;
+			productReference = 37C25FD9D339DEE2C2138E91 /* StemSense.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF269253908112075B0B1C62 /* StemSense Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 450C09590A8B6BE53AA8BC99 /* Build configuration list for PBXNativeTarget "StemSense Extension" */;
+			buildPhases = (
+				F502D20C5EA47D1D8958BE39 /* Sources */,
+				BD7AC33D73AF1CEF53B958E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "StemSense Extension";
+			packageProductDependencies = (
+			);
+			productName = "StemSense Extension";
+			productReference = 140449F258C01D7AC46FECE5 /* StemSense Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC949CF82254CA5D7A053926 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					939F489917D2FBD60693149B = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					AC127708441AFD97EA71D821 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					FF269253908112075B0B1C62 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 55ABEF668C837A53CA6F50D3 /* Build configuration list for PBXProject "StemSense" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 874879A3C662B8ED91B4F162;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC127708441AFD97EA71D821 /* StemSense */,
+				FF269253908112075B0B1C62 /* StemSense Extension */,
+				939F489917D2FBD60693149B /* StemSenseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50739580C701D6672153FF21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAC1F7B053C24D0CEA9C1BC8 /* Assets.xcassets in Resources */,
+				43F6B4892AF870C52C5C0279 /* PlayerShell.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD7AC33D73AF1CEF53B958E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A53F89EB1B364C937615640 /* content.css in Resources */,
+				88F0FA54121507D4B10F083A /* content.js in Resources */,
+				A373600D2EE15607A44310AF /* icon-128.png in Resources */,
+				160A804C97184E93F9EFCADC /* icon-48.png in Resources */,
+				A62DB18A67E0E747D8D2EBE9 /* icon-96.png in Resources */,
+				9FA2ECEA80ADA89D55BEEF3A /* manifest.json in Resources */,
+				E07C56503BFAA5B2352155EB /* popup.css in Resources */,
+				0BA1776A3C79CD4FA61EDB88 /* popup.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA14DF7BA024C22292C287E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9442B05C73D3C085C55022AE /* ContentView.swift in Sources */,
+				12CA82C92F522D8CE47FD951 /* PlayerController.swift in Sources */,
+				F15AEAF4A44CA0D2DC3D6EAA /* PlayerSnapshot.swift in Sources */,
+				24190801B5AAA5874911DA22 /* RemoteCommandController.swift in Sources */,
+				2E462ACDE72621195A4988F4 /* SafariSetupView.swift in Sources */,
+				720780E12810064A245583A8 /* StemClassifier.swift in Sources */,
+				B5555ED22CC61CEACA62C686 /* StemSenseApp.swift in Sources */,
+				0B3949D2E9F435934B95BF63 /* StemSenseEngine.swift in Sources */,
+				FC62C020AB7F3BBEFD16BFD7 /* StemSenseLabView.swift in Sources */,
+				B7E90962A34B40BB42782C78 /* StemSignalCapture.swift in Sources */,
+				4FB8E17431543E470B03536C /* SystemVolumeBridge.swift in Sources */,
+				00F379D328D8CCBE12A86A79 /* YouTubeURLParser.swift in Sources */,
+				3618AD50C4C96BCFFC756969 /* YouTubeWebView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC3A87EC69E2EF22E8BF84E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2B2A6CED4044DCE116F9D05 /* StemClassifierTests.swift in Sources */,
+				3E678213E83F238B6754B374 /* YouTubeURLParserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F502D20C5EA47D1D8958BE39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A355D3B3AC88E65567048F1F /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2A6A4D161EF1F20E37E7912 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC127708441AFD97EA71D821 /* StemSense */;
+			targetProxy = D91EA3304CA109792E4C8923 /* PBXContainerItemProxy */;
+		};
+		F698A63D89A7F8D14FDEC489 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF269253908112075B0B1C62 /* StemSense Extension */;
+			targetProxy = 7074ED23D7204AB80B291F16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1C2E7E263A937124348C8F00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "StemSense Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.etellis.stemsense.Extension;
+				PRODUCT_NAME = "StemSense Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		63C299B49B33167073A973E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		665DF6FC1666087C1117B17D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "StemSense Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.etellis.stemsense.Extension;
+				PRODUCT_NAME = "StemSense Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		67C67CE6F1B0FE035B43F239 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6A3E1A7FB9F839F7DCCFE6E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = StemSense/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.etellis.stemsense;
+				PRODUCT_NAME = StemSense;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B983FFDEC70333BF9104B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.etellis.stemsense.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StemSense.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StemSense";
+			};
+			name = Release;
+		};
+		928B4B98C32798AEF8097274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.etellis.stemsense.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StemSense.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StemSense";
+			};
+			name = Debug;
+		};
+		D039501E177EDF71065C310F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = StemSense/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.etellis.stemsense;
+				PRODUCT_NAME = StemSense;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4236167878F13C60D4DBF464 /* Build configuration list for PBXNativeTarget "StemSenseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				928B4B98C32798AEF8097274 /* Debug */,
+				6B983FFDEC70333BF9104B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		450C09590A8B6BE53AA8BC99 /* Build configuration list for PBXNativeTarget "StemSense Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				665DF6FC1666087C1117B17D /* Debug */,
+				1C2E7E263A937124348C8F00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		55ABEF668C837A53CA6F50D3 /* Build configuration list for PBXProject "StemSense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67C67CE6F1B0FE035B43F239 /* Debug */,
+				63C299B49B33167073A973E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		793A027F49B62AF5DCBA33B4 /* Build configuration list for PBXNativeTarget "StemSense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A3E1A7FB9F839F7DCCFE6E9 /* Debug */,
+				D039501E177EDF71065C310F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC949CF82254CA5D7A053926 /* Project object */;
+}
