@@ -10,6 +10,7 @@ The mark turns the product mechanism into one compact symbol: two opposing stems
 - `StemSense-app-icon.png` — 1024 px flattened iOS source icon
 - `Generated/StemSense-generated-master.png` — selected image-generation master
 - `Explorations/` — the three retained concept generations
+- `GENERATION_NOTES.md` — selected prompt and refinement provenance
 
 ## Palette
 
